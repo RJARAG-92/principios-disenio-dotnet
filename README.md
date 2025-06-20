@@ -55,7 +55,7 @@ dotnet run --project <nombre_del_proyecto>
 Ejemplo:
 ```bash
 dotnet run --project 2.PrincipiosComplementarios/GestionTareasApp
-
+```
 ---
 
 ## 👤 Autor
