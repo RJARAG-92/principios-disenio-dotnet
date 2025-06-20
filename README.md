@@ -1,6 +1,6 @@
-# 🏗️ Principios de Diseño en .NET (SOLID)
+# 🏗️ Principios de Diseño en .NET (SOLID + Complementarios)
 
-Este repositorio presenta una colección de ejemplos empresariales desarrollados en C# con .NET, que aplican los principios **SOLID** de diseño de software orientado a objetos. Cada ejemplo se estructura como un proyecto independiente dentro de una solución compartida.
+Este repositorio presenta una colección de ejemplos empresariales desarrollados en C# con .NET, aplicando tanto los principios **SOLID** como los **principios de diseño complementarios**. Cada conjunto de principios se aplica en proyectos independientes dentro de una solución organizada.
 
 ---
 
@@ -15,37 +15,46 @@ Demostrar cómo aplicar buenas prácticas de diseño en la construcción de soft
 ```
 principios-disenio-dotnet/
 │
-├── FacturacionSOLIDApp/      # Aplicación de principios SOLID en facturación
+├── 1.PrincipiosSOLID/
+│   ├── FacturacionSOLIDApp/      # Aplicación de SOLID en facturación
+│   ├── InventarioSOLIDApp/       # Aplicación de SOLID en gestión de inventario
+│   └── ReportesSOLIDApp/         # Aplicación de SOLID en generación de reportes
 │
-├── InventarioSOLIDApp/       # Aplicación de principios SOLID en gestión de inventario
-│
-├── ReportesSOLIDApp/         # Aplicación de principios SOLID en generación de reportes
+├── 2.PrincipiosComplementarios/
+│   └── GestionTareasApp/         # Aplicación de DRY, KISS, YAGNI, SoC y Cohesión
 │
 └── principios-disenio-dotnet.sln
 ```
 
 ---
 
-## 🧱 Principios aplicados (SOLID)
+## 🧱 Principios aplicados
 
-- **S**: Principio de Responsabilidad Única
-- **O**: Principio Abierto/Cerrado
-- **L**: Principio de Sustitución de Liskov
-- **I**: Principio de Segregación de Interfaces
-- **D**: Principio de Inversión de Dependencias
+### 🔷 Principios SOLID (1.PrincipiosSOLID)
+- **S**: Responsabilidad Única
+- **O**: Abierto/Cerrado
+- **L**: Sustitución de Liskov
+- **I**: Segregación de Interfaces
+- **D**: Inversión de Dependencias
+
+### 🔶 Principios de Diseño Complementarios (2.PrincipiosComplementarios)
+- **DRY** (Don't Repeat Yourself)
+- **KISS** (Keep It Simple, Stupid)
+- **YAGNI** (You Ain’t Gonna Need It)
+- **Separation of Concerns (SoC)**
+- **Alta cohesión / Bajo acoplamiento**
 
 ---
 
 ## ✅ Ejecución
-Puedes ejecutar cualquiera de los proyectos con el siguiente comando:
+Puedes ejecutar cualquier proyecto con el siguiente comando:
 
 ```bash
 dotnet run --project <nombre_del_proyecto>
 ```
 Ejemplo:
 ```bash
-dotnet run --project ReportesSOLIDApp
-```
+dotnet run --project 2.PrincipiosComplementarios/GestionTareasApp
 
 ---
 
@@ -53,8 +62,3 @@ dotnet run --project ReportesSOLIDApp
 **Ricardo Jara Gaspar**  
 Ingeniero de Software especializado en .NET y Arquitectura de Software  
 🔗 [GitHub](https://github.com/RJARAG-92) · [LinkedIn](https://www.linkedin.com/in/ricardojarag) · 🇵🇪 Perú
-
----
-
-## 📌 Nota
-Este repositorio busca reforzar conceptos clave de arquitectura de software limpia. Ideal para preparar entrevistas técnicas, desarrollar buenas prácticas o enseñar a nuevos desarrolladores.
